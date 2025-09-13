@@ -122,3 +122,48 @@
       margin-top:18px;
       display:flex; gap:12px; flex-wrap:wrap;
     }
+
+    footer{
+      margin-top:18px; color:#9ca3af; font-size:.9rem; text-align:center;
+    }
+
+    @media (max-width:700px){
+      .card{ grid-template-columns:1fr; padding:26px; gap:18px; }
+      .avatar{ width:120px; height:120px; }
+      .bio{ font-size: .98rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="avatar-wrap">
+      <img class="avatar" src="photo.jpg" alt="Portrait de Ludovic Lang" loading="eager" />
+    </div>
+
+    <section aria-label="Présentation">
+      <h1>Ludovic Lang</h1>
+      <p class="role">Entrepreneur & Créatif</p>
+
+      <p class="bio">
+        Fondateur impliqué, curieux des belles histoires et des projets à impact.
+        Ici, retrouvez mes réseaux et un moyen simple de me contacter.
+      </p>
+
+      <nav class="links" aria-label="Réseaux et liens">
+        <a class="btn" href="https://www.linkedin.com/in/lang-ludovic-06a10159/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://www.facebook.com/ludovic.lang/" target="_blank" rel="noopener">Facebook</a>
+        <a class="btn" href="https://www.instagram.com/ludovic_lang_/" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn" href="https://www.instagram.com/laboitedanslaboite/" target="_blank" rel="noopener">Instagram (La Boîte)</a>
+        <a class="btn" href="https://www.laboitedanslaboite.com/notrehistoire" target="_blank" rel="noopener">Notre histoire</a>
+      </nav>
+
+      <div class="cta">
+        <a class="btn" href="mailto:ludovic@laboitedanslaboite.com" aria-label="M’écrire par email">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Ludovic Lang • ludoviclang.fr</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
