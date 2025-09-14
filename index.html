@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Site officiel, liens et contact." />
   <meta name="twitter:image" content="https://ludoviclang.fr/photo.jpg" />
 
-  <!-- Font Awesome (logos) -->
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/8693ee6e15.js" crossorigin="anonymous"></script>
 
   <style>
@@ -81,8 +81,6 @@
 
     .icons a {
       font-size: 1.5rem;
-      color: #136f9c;
-      background: #f0f8ff;
       border-radius: 50%;
       width: 45px;
       height: 45px;
@@ -90,12 +88,30 @@
       align-items: center;
       justify-content: center;
       transition: all 0.25s ease;
-    }
-    .icons a:hover {
       color: #fff;
-      background: #136f9c;
-      transform: scale(1.1);
     }
+
+    /* LinkedIn */
+    .icons a.linkedin { background: #0A66C2; }
+    .icons a.linkedin:hover { background: #084d91; }
+
+    /* Facebook */
+    .icons a.facebook { background: #1877F2; }
+    .icons a.facebook:hover { background: #0f5ab5; }
+
+    /* Instagram */
+    .icons a.instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+    .icons a.instagram:hover { filter: brightness(0.85); }
+
+    /* Site web */
+    .icons a.web { background: #333; }
+    .icons a.web:hover { background: #000; }
+
+    /* Email */
+    .icons a.mail { background: #EA4335; }
+    .icons a.mail:hover { background: #c13324; }
 
     footer {
       margin-top: 25px;
@@ -116,12 +132,12 @@
     </p>
 
     <div class="icons">
-      <a href="https://www.linkedin.com/in/lang-ludovic-06a10159/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://www.facebook.com/ludovic.lang/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/ludovic_lang_/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.instagram.com/laboitedanslaboite/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.laboitedanslaboite.com/notrehistoire" target="_blank"><i class="fas fa-globe"></i></a>
-      <a href="mailto:ludovic@laboitedanslaboite.com"><i class="fas fa-envelope"></i></a>
+      <a class="linkedin" href="https://www.linkedin.com/in/lang-ludovic-06a10159/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a class="facebook" href="https://www.facebook.com/ludovic.lang/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a class="instagram" href="https://www.instagram.com/ludovic_lang_/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a class="instagram" href="https://www.instagram.com/laboitedanslaboite/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a class="web" href="https://www.laboitedanslaboite.com/notrehistoire" target="_blank"><i class="fas fa-globe"></i></a>
+      <a class="mail" href="mailto:ludovic@laboitedanslaboite.com"><i class="fas fa-envelope"></i></a>
     </div>
 
     <footer>© <span id="y"></span> Ludovic Lang • ludoviclang.fr</footer>
