@@ -20,150 +20,115 @@
   <meta name="twitter:description" content="Site officiel, liens et contact." />
   <meta name="twitter:image" content="https://ludoviclang.fr/photo.jpg" />
 
-  <!-- Données structurées Person (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ludovic Lang",
-    "image": "https://ludoviclang.fr/photo.jpg",
-    "jobTitle": "Réalisateur & Producteur Associé",
-    "url": "https://ludoviclang.fr/",
-    "sameAs": [
-      "https://www.linkedin.com/in/lang-ludovic-06a10159/",
-      "https://www.facebook.com/ludovic.lang/",
-      "https://www.instagram.com/ludovic_lang_/",
-      "https://www.instagram.com/laboitedanslaboite/",
-      "https://www.laboitedanslaboite.com/notrehistoire"
-    ],
-    "email": "mailto:ludovic@laboitedanslaboite.com"
-  }
-  </script>
+  <!-- Font Awesome pour les icônes -->
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
 
   <style>
-    :root{
-      --bg: #f6f7fb;
-      --card: #ffffff;
-      --text: #111827;
-      --muted: #6b7280;
-      --accent: #136f9c;
-      --accent-2:#0f597f;
-      --ring: rgba(19,111,156,.15);
-      --shadow: 0 20px 40px rgba(0,0,0,.08);
-      --radius: 22px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
+    body {
+      margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(1200px 600px at 15% 0%, #eaf3ff 0%, transparent 60%),
-        radial-gradient(1000px 600px at 85% 100%, #f2fff6 0%, transparent 60%),
-        var(--bg);
-      display:grid; place-items:center; padding:32px;
+      background: #f6f7fb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
     }
 
-    .card{
-      width:min(900px, 95vw);
-      background:var(--card);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      display:grid;
-      grid-template-columns:160px 1fr;
-      gap:28px;
-      padding:34px;
-      border:1px solid #eef0f4;
+    .card {
+      text-align: center;
+      background: #fff;
+      border-radius: 22px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      max-width: 460px;
     }
 
-    .avatar-wrap{
-      display:grid;
-      place-items:center;
-    }
-    .avatar{
-      width:150px; height:150px;
-      border-radius:50%;
-      object-fit:cover;
-      box-shadow: 0 8px 24px var(--ring);
-      border:4px solid #fff;
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
 
-    h1{
-      margin:0 0 6px 0;
-      font-size:clamp(1.8rem, 3.8vw, 2.4rem);
-      letter-spacing:.2px;
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
     }
-    .role{ margin:0 0 14px 0; color:var(--muted); font-size:1.05rem; }
-    .bio{
-      margin: 0 0 18px 0;
+    .role {
+      color: #666;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .bio {
       color:#374151;
-      line-height:1.55;
-      max-width:60ch;
+      line-height:1.5;
+      font-size: 0.95rem;
+      max-width: 60ch;
+      margin: 0 auto 22px auto;
     }
 
-    .links{
-      display:flex; flex-wrap:wrap; gap:12px;
-    }
-    .btn{
-      appearance:none; border:none; cursor:pointer;
-      padding:.68rem 1.05rem;
-      border-radius:12px;
-      background:var(--accent);
-      color:#fff; text-decoration:none; font-weight:600;
-      letter-spacing:.2px;
-      box-shadow: 0 6px 18px var(--ring);
-      transition: transform .06s ease, background .15s ease, box-shadow .15s ease;
-    }
-    .btn:hover{ background:var(--accent-2); transform: translateY(-1px); box-shadow:0 10px 24px var(--ring); }
-    .btn:focus{ outline: 3px solid var(--ring); outline-offset: 2px; }
-
-    .cta{
-      margin-top:18px;
-      display:flex; gap:12px; flex-wrap:wrap;
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 18px;
+      flex-wrap: wrap;
     }
 
-    footer{
-      margin-top:18px; color:#9ca3af; font-size:.9rem; text-align:center;
+    .icons a {
+      font-size: 1.5rem;
+      color: #136f9c;
+      background: #f0f8ff;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s ease;
+    }
+    .icons a:hover {
+      color: #fff;
+      background: #136f9c;
+      transform: scale(1.1);
     }
 
-    @media (max-width:700px){
-      .card{ grid-template-columns:1fr; padding:26px; gap:18px; }
-      .avatar{ width:120px; height:120px; }
-      .bio{ font-size: .98rem; }
+    footer {
+      margin-top: 25px;
+      font-size: 0.85rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <main class="card" role="main">
-    <div class="avatar-wrap">
-      <img class="avatar" src="photo.jpg" alt="Portrait de Ludovic Lang" loading="eager" />
+  <div class="card">
+    <img class="avatar" src="photo.jpg" alt="Portrait de Ludovic Lang" />
+    <h1>Ludovic Lang</h1>
+    <p class="role">Réalisateur & Producteur Associé</p>
+
+    <p class="bio">
+      Fondateur impliqué, curieux des belles histoires et des projets à impact.
+      Ici, retrouvez mes réseaux et un moyen simple de me contacter.
+    </p>
+
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/lang-ludovic-06a10159/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/ludovic.lang/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ludovic_lang_/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/laboitedanslaboite/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.laboitedanslaboite.com/notrehistoire" target="_blank"><i class="fas fa-globe"></i></a>
+      <a href="mailto:ludovic@laboitedanslaboite.com"><i class="fas fa-envelope"></i></a>
     </div>
 
-    <section aria-label="Présentation">
-      <h1>Ludovic Lang</h1>
-      <p class="role">Réalisateur & Producteur Associé</p>
+    <footer>© <span id="y"></span> Ludovic Lang • ludoviclang.fr</footer>
+  </div>
 
-      <p class="bio">
-        Fondateur impliqué, curieux des belles histoires et des projets à impact.
-        Ici, retrouvez mes réseaux et un moyen simple de me contacter.
-      </p>
-
-      <nav class="links" aria-label="Réseaux et liens">
-        <a class="btn" href="https://www.linkedin.com/in/lang-ludovic-06a10159/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://www.facebook.com/ludovic.lang/" target="_blank" rel="noopener">Facebook</a>
-        <a class="btn" href="https://www.instagram.com/ludovic_lang_/" target="_blank" rel="noopener">Instagram</a>
-        <a class="btn" href="https://www.instagram.com/laboitedanslaboite/" target="_blank" rel="noopener">Instagram (La Boîte)</a>
-        <a class="btn" href="https://www.laboitedanslaboite.com/notrehistoire" target="_blank" rel="noopener">Notre histoire</a>
-      </nav>
-
-      <div class="cta">
-        <a class="btn" href="mailto:ludovic@laboitedanslaboite.com" aria-label="M’écrire par email">Email</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>© <span id="y"></span> Ludovic Lang • ludoviclang.fr</footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
