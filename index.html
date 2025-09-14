@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -102,6 +103,7 @@
       color: #fff;
     }
 
+    /* styles par plateforme */
     .icons a.linkedin { background: #0A66C2; }
     .icons a.facebook { background: #1877F2; }
     .icons a.instagram {
@@ -123,6 +125,14 @@
     }
     .icons a.mail { background: #EA4335; }
     .icons a.imdb { background: #F5C518; color: #000; }
+
+    /* perso plus petit */
+    .icons.perso a {
+      width: 38px;
+      height: 38px;
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
 
     /* Section films */
     .films {
@@ -190,17 +200,11 @@
     </p>
 
     <div class="networks">
-      <h3>Réseaux personnels</h3>
-      <div class="icons">
-        <a class="facebook" href="https://www.facebook.com/ludovic.lang/" target="_blank" aria-label="Facebook personnel"><i class="fab fa-facebook-f"></i></a>
-        <a class="instagram" href="https://www.instagram.com/ludovic_lang_/" target="_blank" aria-label="Instagram personnel"><i class="fab fa-instagram"></i></a>
-        <a class="linkedin" href="https://www.linkedin.com/in/lang-ludovic-06a10159/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-
       <h3>Réseaux professionnels</h3>
       <div class="icons">
-        <a class="facebook" href="https://www.facebook.com/laboitedanslaboite/" target="_blank" aria-label="Facebook professionnel"><i class="fab fa-facebook-f"></i></a>
-        <a class="instagram" href="https://www.instagram.com/laboitedanslaboite/" target="_blank" aria-label="Instagram professionnel"><i class="fab fa-instagram"></i></a>
+        <a class="linkedin" href="https://www.linkedin.com/in/lang-ludovic-06a10159/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="facebook" href="https://www.facebook.com/laboitedanslaboite/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="instagram" href="https://www.instagram.com/laboitedanslaboite/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a class="web" href="https://www.laboitedanslaboite.com/notrehistoire" target="_blank">
           <img src="logolbdlb.png" alt="Logo La Boîte Dans La Boîte" />
         </a>
@@ -209,6 +213,12 @@
         </a>
         <a class="imdb" href="https://www.imdb.com/fr/user/ur166041620/?ref_=nmmi_nv_profile" target="_blank"><i class="fab fa-imdb"></i></a>
         <a class="mail" href="mailto:ludovic@laboitedanslaboite.com"><i class="fas fa-envelope"></i></a>
+      </div>
+
+      <h3>Réseaux personnels</h3>
+      <div class="icons perso">
+        <a class="facebook" href="https://www.facebook.com/ludovic.lang/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="instagram" href="https://www.instagram.com/ludovic_lang_/" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </div>
@@ -254,10 +264,10 @@
     ],
     "sameAs": [
       "https://www.linkedin.com/in/lang-ludovic-06a10159/",
-      "https://www.facebook.com/ludovic.lang/",
-      "https://www.instagram.com/ludovic_lang_/",
       "https://www.facebook.com/laboitedanslaboite/",
       "https://www.instagram.com/laboitedanslaboite/",
+      "https://www.facebook.com/ludovic.lang/",
+      "https://www.instagram.com/ludovic_lang_/",
       "https://www.laboitedanslaboite.com/",
       "https://www.film-documentaire.fr/4DACTION/w_fiche_createur/75077",
       "https://www.imdb.com/fr/user/ur166041620/?ref_=nmmi_nv_profile"
