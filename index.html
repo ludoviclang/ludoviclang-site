@@ -91,27 +91,24 @@
       color: #fff;
     }
 
-    /* LinkedIn */
     .icons a.linkedin { background: #0A66C2; }
-    .icons a.linkedin:hover { background: #084d91; }
-
-    /* Facebook */
     .icons a.facebook { background: #1877F2; }
-    .icons a.facebook:hover { background: #0f5ab5; }
-
-    /* Instagram */
     .icons a.instagram {
       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     }
-    .icons a.instagram:hover { filter: brightness(0.85); }
-
-    /* Site web */
-    .icons a.web { background: #333; }
-    .icons a.web:hover { background: #000; }
-
-    /* Email */
+    .icons a.web {
+      background: #fff;
+      border: 2px solid #333;
+      overflow: hidden;
+      padding: 0;
+    }
+    .icons a.web img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
     .icons a.mail { background: #EA4335; }
-    .icons a.mail:hover { background: #c13324; }
 
     footer {
       margin-top: 25px;
@@ -136,7 +133,9 @@
       <a class="facebook" href="https://www.facebook.com/ludovic.lang/" target="_blank"><i class="fab fa-facebook-f"></i></a>
       <a class="instagram" href="https://www.instagram.com/ludovic_lang_/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a class="instagram" href="https://www.instagram.com/laboitedanslaboite/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a class="web" href="https://www.laboitedanslaboite.com/notrehistoire" target="_blank"><i class="fas fa-globe"></i></a>
+      <a class="web" href="https://www.laboitedanslaboite.com/notrehistoire" target="_blank">
+        <img src="logolbdlb.png" alt="Logo La Boîte Dans La Boîte" />
+      </a>
       <a class="mail" href="mailto:ludovic@laboitedanslaboite.com"><i class="fas fa-envelope"></i></a>
     </div>
 
